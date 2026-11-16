@@ -66,6 +66,7 @@ def main(argv: list[str] | None = None) -> int:
         sys.stdout.write(result.source)
         if result.source and not result.source.endswith("\n"):
             sys.stdout.write("\n")
+        sys.stdout.flush()
 
     if args.run:
         sys.stderr.write("--- Output ---\n")
